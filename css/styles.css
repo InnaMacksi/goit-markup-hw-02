@@ -55,3 +55,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-contacts-and-paragraph);
 }
+.contact:hover,
+.contact:focus {
+  color: var(--color-logo-and-focus);
+}
+/* ----------STUDIO------------------ */
+/* ---------section---HERO--------------- */
