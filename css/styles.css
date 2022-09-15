@@ -1,29 +1,20 @@
 :root {
   --color-logo-and-focus: #2196f3;
-  --logo-color-light-bg: #000000;
-  --logo-color-dark-bg: #ffffff;
+  --color-logo-light-bg: #000000;
+  --color-logo-hero-dark-bg: #ffffff;
   --color-nav-and-title: #212121;
   --color-contacts-and-paragraph: #757575;
+  --color-bg-hero: #2f303a;
+  --color-button-hero: #2196f3;
+  --color-button-hero-focus: #188ce8;
+  --color-bg-button-our-projects: #f5f4fa;
+  --color-button-our-projects: #212121;
+  --color-button-our-projects-focus: #ffffff;
 }
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-/* -----------HEADER---------------- */
-
-.logo-blue {
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-logo-and-focus);
-}
-.logo-black {
-  color: var(--logo-color-light-bg);
 }
 
 .list {
@@ -32,6 +23,20 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+/* -----------HEADER---------------- */
+
+.logo-blue {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-logo-and-focus);
+}
+.logo-black {
+  color: var(--color-logo-light-bg);
 }
 
 .navigation-link {
@@ -61,3 +66,123 @@ body {
 }
 /* ----------STUDIO------------------ */
 /* ---------section---HERO--------------- */
+.hero {
+  background: var(--color-bg-hero);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-logo-hero-dark-bg);
+}
+
+.hero-button {
+  background: var(--color-button-hero);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--color-logo-hero-dark-bg);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--color-button-hero-focus);
+}
+/* -----------SECTION------НАШІ-ПЕРЕВАГИ-----------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.item-preference {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-nav-and-title);
+}
+
+.preference {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-contacts-and-paragraph);
+}
+/* -----------SECTION--------ЧИМ_МИ_ЗАЙМАЄМОСЯ--------------- */
+.title-section {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-nav-and-title);
+}
+/* -----------SECTION-----НАША-КОМАНДА------------ */
+.our-workers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-nav-and-title);
+}
+.working-positions {
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-contacts-and-paragraph);
+}
+/* ------------PORTFOLIO----------------- */
+/* ------SECTION-------НАШІ-РОБОТИ---*/
+.button-our-projects {
+  background: var(--color-bg-button-our-projects);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--color-button-our-projects);
+}
+
+.button-our-projects:hover,
+.button-our-projects:focus {
+  background: var(--color-button-hero);
+  color: var(--color-button-our-projects-focus);
+}
+
+.title-our-projects {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-nav-and-title);
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-contacts-and-paragraph);
+}
+
+.capital-letters {
+  text-transform: uppercase;
+}
+/* ----------FOOTER--------------------- */
