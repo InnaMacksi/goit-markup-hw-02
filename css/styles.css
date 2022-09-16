@@ -1,9 +1,12 @@
 :root {
+  --color-bg-header: #ffffff;
   --color-logo-and-focus: #2196f3;
   --color-logo-light-bg: #000000;
   --color-logo-hero-dark-bg: #ffffff;
   --color-nav-and-title: #212121;
+  --color-bg_section-preference-work-projects: #f5f5f5;
   --color-contacts-and-paragraph: #757575;
+  --color-bg-our-tim: #f5f4fa;
   --color-bg-hero-and-footer: #2f303a;
   --color-button-hero: #2196f3;
   --color-button-hero-focus: #188ce8;
@@ -29,7 +32,9 @@ body {
 }
 
 /* -----------HEADER---------------- */
-
+.header {
+  background: var(--color-bg-header);
+}
 .logo-blue {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -61,6 +66,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: inherit;
 }
 .contact:hover,
 .contact:focus {
@@ -112,6 +118,11 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.section-preference {
+  background: var(--color-bg_section-preference-work-projects);
+}
+
 .item-preference {
   font-size: 14px;
   line-height: 1.14;
@@ -120,13 +131,15 @@ body {
   color: var(--color-nav-and-title);
 }
 
-.preference {
+.text-preference {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--color-contacts-and-paragraph);
 }
 /* -----------SECTION--------ЧИМ_МИ_ЗАЙМАЄМОСЯ--------------- */
+.section-our-work {
+  background: var(--color-bg_section-preference-work-projects);
+}
 .title-section {
   font-size: 36px;
   line-height: 1.17;
@@ -135,6 +148,9 @@ body {
   color: var(--color-nav-and-title);
 }
 /* -----------SECTION-----НАША-КОМАНДА------------ */
+.section-our-tim {
+  background: var(--color-bg-our-tim);
+}
 .our-workers {
   font-weight: 500;
   font-size: 16px;
@@ -148,10 +164,14 @@ body {
   line-height: 1.19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-contacts-and-paragraph);
 }
 /* ------------PORTFOLIO----------------- */
 /* ------SECTION-------НАШІ-РОБОТИ---*/
+
+.section-our-projects {
+  background: var(--color-bg_section-preference-work-projects);
+}
+
 .button-our-projects {
   background: var(--color-bg-button-our-projects);
   font-family: inherit;
@@ -169,6 +189,9 @@ body {
   background: var(--color-button-hero);
   color: var(--color-button-our-projects-focus);
 }
+.link-our-project {
+  color: inherit;
+}
 
 .title-our-projects {
   font-size: 18px;
@@ -181,7 +204,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--color-contacts-and-paragraph);
 }
 
 .capital-letters {
@@ -198,8 +220,11 @@ body {
 
 .addres {
   font-style: normal;
-  }
-
+}
+.addres-footer:hover,
+.addres-footer:focus {
+  color: var(--color-logo-and-focus);
+}
 
 .addres-link {
   font-size: 14px;
