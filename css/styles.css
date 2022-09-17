@@ -1,25 +1,18 @@
 :root {
-  --color-bg-header: #ffffff;
-  --color-logo-and-focus: #2196f3;
+  --color-bg-header-and-logo-btn-addres: #ffffff;
+  --color-logo-and-focus-btn-hero: #2196f3;
   --color-logo-light-bg: #000000;
-  --color-logo-hero-dark-bg: #ffffff;
-  --color-nav-and-title: #212121;
+  --color-nav-and-title-and-btn-project: #212121;
   --color-bg_section-preference-work-projects: #f5f5f5;
   --color-contacts-and-paragraph: #757575;
-  --color-bg-our-tim: #f5f4fa;
+  --color-bg-our-tim-and-bg-button-our-projects: #f5f4fa;
   --color-bg-hero-and-footer: #2f303a;
-  --color-button-hero: #2196f3;
   --color-button-hero-focus: #188ce8;
-  --color-bg-button-our-projects: #f5f4fa;
-  --color-button-our-projects: #212121;
-  --color-button-our-projects-focus: #ffffff;
-  --color-addres-link: #ffffff;
   --color-contact-in-footer: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: 'Roboto', sans-serif;
-  /* font-weight: 400;
-  font-style: normal; */
+  font-size: 14px;
   color: var(--color-contacts-and-paragraph);
 }
 
@@ -33,7 +26,6 @@ body {
 
 /* -----------HEADER---------------- */
 .header {
-  background: var(--color-bg-header);
 }
 .logo-blue {
   font-family: 'Raleway', sans-serif;
@@ -41,7 +33,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--color-logo-and-focus);
+  color: var(--color-logo-and-focus-btn-hero);
 }
 .logo-black {
   color: var(--color-logo-light-bg);
@@ -49,28 +41,26 @@ body {
 
 .navigation-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--color-nav-and-title);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 .navigation-link:hover,
 .navigation-link:focus {
-  color: var(--color-logo-and-focus);
+  color: var(--color-logo-and-focus-btn-hero);
 }
 .current {
-  color: var(--color-logo-and-focus);
+  color: var(--color-logo-and-focus-btn-hero);
 }
 .contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
 }
 .contact:hover,
 .contact:focus {
-  color: var(--color-logo-and-focus);
+  color: var(--color-logo-and-focus-btn-hero);
 }
 /* ----------STUDIO------------------ */
 /* ---------section---HERO--------------- */
@@ -85,11 +75,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-logo-hero-dark-bg);
+  color: var(--color-bg-header-and-logo-btn-addres);
 }
 
 .hero-button {
-  background: var(--color-button-hero);
+  background: var(--color-logo-and-focus-btn-hero);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -99,7 +89,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: var(--color-logo-hero-dark-bg);
+  color: var(--color-bg-header-and-logo-btn-addres);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -120,36 +110,33 @@ body {
 }
 
 .section-preference {
-  background: var(--color-bg_section-preference-work-projects);
 }
 
 .item-preference {
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-nav-and-title);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 
 .text-preference {
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 /* -----------SECTION--------ЧИМ_МИ_ЗАЙМАЄМОСЯ--------------- */
 .section-our-work {
-  background: var(--color-bg_section-preference-work-projects);
 }
 .title-section {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-nav-and-title);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 /* -----------SECTION-----НАША-КОМАНДА------------ */
 .section-our-tim {
-  background: var(--color-bg-our-tim);
+  background: var(--color-bg-our-tim-and-bg-button-our-projects);
 }
 .our-workers {
   font-weight: 500;
@@ -157,7 +144,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-nav-and-title);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 .working-positions {
   font-size: 16px;
@@ -169,11 +156,10 @@ body {
 /* ------SECTION-------НАШІ-РОБОТИ---*/
 
 .section-our-projects {
-  background: var(--color-bg_section-preference-work-projects);
 }
 
 .button-our-projects {
-  background: var(--color-bg-button-our-projects);
+  background: var(--color-bg-our-tim-and-bg-button-our-projects);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -181,13 +167,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  color: var(--color-button-our-projects);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 
 .button-our-projects:hover,
 .button-our-projects:focus {
-  background: var(--color-button-hero);
-  color: var(--color-button-our-projects-focus);
+  background: var(--color-logo-and-focus-btn-hero);
+  color: var(--color-bg-header-and-logo-btn-addres);
 }
 .link-our-project {
   color: inherit;
@@ -197,7 +183,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-nav-and-title);
+  color: var(--color-nav-and-title-and-btn-project);
 }
 
 .project-type {
@@ -215,7 +201,7 @@ body {
 }
 
 .logo-white {
-  color: var(--color-logo-hero-dark-bg);
+  color: var(--color-bg-header-and-logo-btn-addres);
 }
 
 .addres {
@@ -223,19 +209,17 @@ body {
 }
 .addres-footer:hover,
 .addres-footer:focus {
-  color: var(--color-logo-and-focus);
+  color: var(--color-logo-and-focus-btn-hero);
 }
 
 .addres-link {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-addres-link);
+  color: var(--color-bg-header-and-logo-btn-addres);
 }
 
 .mail-pfone-in-footer {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-contact-in-footer);
